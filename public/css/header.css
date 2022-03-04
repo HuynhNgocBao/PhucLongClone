@@ -175,6 +175,15 @@
     position: relative;
 }
 
+.icon-down{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: block;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
 .nav-item{
     color: #333;
 }

@@ -44,6 +44,9 @@
     .header{
         background-color: #0C713D;
     }
+    .nav-list li:hover .nav-item-info{
+        display: none;
+    }
     .wrap{
         width: 100%;
     }

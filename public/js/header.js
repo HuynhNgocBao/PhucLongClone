@@ -3,6 +3,7 @@ var modalOpen = document.querySelector('.modal-icon');
 var modal = document.querySelector('.modal');
 var modalContainer = document.querySelector('.modal-container');
 var modalClose = document.querySelector('.modal-close');
+var iconDowns = document.querySelectorAll('.icon-down');
 modalOpen.onclick = function(e){
     modal.classList.add('open');
 }
@@ -15,3 +16,10 @@ modal.onclick = function(e){
 modalContainer.onclick = function(e){
     e.stopPropagation();
 }
+iconDowns.forEach((iconDown,index)=>{
+    iconDown.onclick = (e)=>{
+        var nav = iconDown.nextElementSibling;
+        if (nav.style.display === "none") nav.style.display = "flex";
+        else nav.style.display = "none";
+    }
+})
