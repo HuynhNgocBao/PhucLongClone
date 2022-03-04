@@ -1,0 +1,262 @@
+.header{
+    background-color: #fff;
+    font-size: 12px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    height: 68px;
+    align-items: center;
+}
+
+
+.modal-icon{
+    display: none;
+}
+
+.delivery-img:hover{
+    animation: moveDeliveryTo 0.5s ease-in, moveDeliveryBack 0.2s ease-in;
+}
+
+.header-logo{
+    height: 90%;
+}
+
+.header-logo img{
+    height: 90%;
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+}
+
+.header-login{
+    font-weight: 600;
+}
+
+.header-login, .language-item, .nav-item{
+    text-decoration: none;
+    color: #000;
+}
+
+.header-info-item, .language-item, .my-cart-info .detail, .my-cart-info .title{
+    padding: 10px;
+}
+
+.language-item + .language-item{
+    border-left: 1px solid #000;
+}
+
+.header-cart, .my-cart-info .detail, .my-cart-purchase{
+    text-decoration: none;
+    padding: 10px;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.language-item:hover{
+    color:#0C713D;
+}
+
+.header-cart-icon{
+    position: relative;
+    font-size: 16px;
+}
+.header-cart-number{
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #0C713D;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding: 2px 5px;
+    font-weight: 400;
+}
+
+.my-cart{
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    font-size: 16px;
+    width: 400px;
+    box-shadow: -1px 1px 1px #000;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    border: 1px solid rgb(214, 210, 210);
+    z-index: 10;
+    text-align: center;
+    z-index: 1000;
+    transform: translateX(30%);
+}
+
+.my-cart::before, .nav-item-info::before{
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent rgb(241, 237, 237) transparent;
+    position: absolute;
+    top: -20px;
+    right: 30%;
+}
+
+
+.my-cart::after, .nav-item-info::after{
+    content: "";
+    border-width: 20px 80px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    top: -20px;
+    right: 30%;
+}
+
+.header-cart:hover .my-cart{
+    display: flex;
+}
+.my-cart-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.my-cart-total{
+    padding: 30px;
+    display: flex;
+    align-self: center;
+}
+
+.my-cart-purchase{ 
+    padding: 20px;
+    width: 80%;
+    align-self: center;
+}
+
+.my-cart-info .detail:hover, .my-cart-purchase:hover, .nav-item-info-column li:hover{
+    background-color: #0C713D;
+    color: #fff;
+}
+
+.my-cart-total .money{
+    color: red;
+    padding-left: 10px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.nav-list{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav-list li{
+    position: relative;
+}
+
+.nav-item{
+    color: #333;
+}
+
+.nav-item-info{
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    font-size: 16px;
+    box-shadow: -1px 1px 1px #000;
+    padding: 20px;
+    border: 1px solid rgb(214, 210, 210);
+    z-index: 10;
+    display: none;
+    justify-content: space-between;
+    transform: translateX(30%);
+    z-index: 100;
+    background-color: #fff;
+}
+
+.nav-item-info-column{
+    list-style-type: none;
+    padding: 20px;
+    min-width: 200px;
+    text-align: start;
+}
+.nav-link{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+
+.nav-link-title{
+    font-weight: 600;
+}
+
+.nav-item-info-column li{
+    padding: 10px;
+}
+
+
+.nav-list li:hover .nav-item-info, .search:hover .nav-item-info{
+    display: flex;
+}
+
+.nav-list li:hover > a{
+    color: #0C713D;
+}
+
+.nav-item-info-column li:hover a{
+    color: #fff;
+}
+
+.search{
+    position: relative;
+}
+
+.search-icon{
+    font-size: 24px;
+}
+
+.modal{
+    display: none;
+}
+@keyframes moveDeliveryTo{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+
+@keyframes moveDeliveryBack{
+    from{
+        transform: translateX(10px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+

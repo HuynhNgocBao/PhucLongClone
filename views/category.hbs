@@ -1,0 +1,47 @@
+<!-- Container -->
+<div class="container-category">
+    <div class="item-container">
+        <div class="item-title">{{category.name}}</div>
+        <div class="item-description">
+            {{category.description}}
+        </div>
+    </div>
+    <form class="filter">
+        <div class="filter-item">
+            <label for="price">Theo giá</label>
+            <select onchange="{
+                const formElement = document.querySelector('.filter');
+                formElement.submit();
+            }
+            "
+            class="filter-input" name="price" id="price">
+                <option value="default">Không lựa chọn</option>
+                <option value="desc">Giảm dần</option>
+                <option value="asc">Tăng dần</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="title">Tên sản phẩm</label>
+            <input type="text" class="filter-input" placeholder="Nhập tên sản phẩm" name="title" value='{{sort.title}}'>
+            <input type="submit" class="filter-input" value="Tìm kiếm">
+        </div>
+    </form>
+    <div class="product-list grid">
+        <div class="row">
+            {{#if product}}
+            {{#each product}}
+            <div class=" product-item column column-4 full-width-mobile-tablet">
+                <div class="product-img">
+                    <img src="/image/product.png" alt="product">
+                </div>
+                <div class="product-title">{{this.title}}</div>
+                <div class="product-weight">{{this.weight}}g</div>
+                <div class="product-price">{{this.price}}đ</div>
+            </div>
+            {{/each}}
+            {{else}}
+            <div style="text-align: center;font-size: 32px;width: 100%">Không có sản phẩm phù hợp</div>
+            {{/if}}
+        </div>
+    </div>
+</div>

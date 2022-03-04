@@ -1,0 +1,148 @@
+.slider{
+    margin-top: 136px;
+    position: relative;
+}
+
+.sliderImg{
+    width: 100%;
+    display: none;
+}
+.slider a{
+    width: 100%;
+}
+
+.slider-icon-back, .slider-icon-next{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: #fff;
+}
+
+.slider-icon-back{
+    left: 50px;
+}
+
+.slider-icon-next{
+    right: 50px;
+}
+
+.sliderImg.active{
+    display: block;
+}
+
+
+.content-item{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-img{
+    flex: 1;
+    padding: 0 40px;
+}
+
+.content-img img{
+    width: 100%;
+}
+
+.content-body{
+    padding: 40px;
+    flex: 1;
+}
+
+.content-title{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-description{
+    line-height: 1.4;
+}
+
+.content-btn{
+    border: 1px solid #0C713D;
+    padding: 10px;
+    color: #0C713D;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-btn:hover{
+    background-color: #0C713D;
+    color: #fff;
+}
+
+
+.wrap{
+    width: 50%;
+    padding: 50px;
+}
+.address{
+    background-color: #0C713D;
+    color: #fff;
+}
+
+.form-title , .form-select, .address-title, .address-item{
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.form-title{
+    font-size: 32px;
+}
+
+.form-select{
+    padding: 10px;
+    background-color: #0C713D;
+    border-radius: 10px;
+    outline: #fff 1px solid;
+    color: #fff;
+}
+
+.form-select option{
+    background-color: #fff;
+    color: #000;
+}
+
+.address-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-img{
+    flex: 1;
+}
+
+.address-body{
+    flex: 10;
+}
+
+
+.address-phone, .address-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.address-btn{
+    flex: 3;
+    height:fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: #fff 1px solid;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.address-btn:hover, .form-select:hover{
+    outline: 1px red solid;
+}
+
+.address-list{
+    overflow: auto;
+}
+
