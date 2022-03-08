@@ -69,13 +69,12 @@
     
     .modal-container{
         height: 100vh;
-        overflow: scroll;
         position: absolute;
         top: 76px;
         left: 0;
     }
     .nav-list{
-        
+        overflow: scroll;
         width: 300px;
         flex-direction: column;
         background-color: #fff;
