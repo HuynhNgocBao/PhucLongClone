@@ -47,13 +47,14 @@
     .nav-list li:hover .nav-item-info{
         display: none;
     }
-    .wrap{
+    .address-wrap{
         width: 100%;
     }
     .content-item{
         flex-direction: column;
     }
-    .footer-signup-input, .footer-signup-btn{
+
+    .footer-signup-input, .footer-signup-btn, .footer-info{
         width: 100%;
         margin: 10px;
     }
@@ -68,13 +69,13 @@
     }
     
     .modal-container{
-        height: 100vh;
+        max-height: 70vh;
+        overflow: scroll;
         position: absolute;
         top: 76px;
         left: 0;
     }
     .nav-list{
-        overflow: scroll;
         width: 300px;
         flex-direction: column;
         background-color: #fff;
@@ -101,8 +102,8 @@
     }
     .modal-close{
         position: absolute;
-        left: 0;
-        top: 30px;
+        left: 24px;
+        top: 32px;
     }
     .modal.open{
         display: block;

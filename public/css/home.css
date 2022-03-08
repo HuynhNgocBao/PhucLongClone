@@ -76,7 +76,7 @@
 }
 
 
-.wrap{
+.address-wrap{
     width: 50%;
     padding: 50px;
 }
@@ -85,16 +85,16 @@
     color: #fff;
 }
 
-.form-title , .form-select, .address-title, .address-item{
+.address-form-title , .address-form-select, .address-title, .address-item{
     margin: 20px 0;
     font-size: 16px;
 }
 
-.form-title{
+.address-form-title{
     font-size: 32px;
 }
 
-.form-select{
+.address-form-select{
     padding: 10px;
     background-color: #0C713D;
     border-radius: 10px;
@@ -102,7 +102,7 @@
     color: #fff;
 }
 
-.form-select option{
+.address-form-select option{
     background-color: #fff;
     color: #000;
 }
@@ -138,7 +138,7 @@
     border-radius: 10px;
 }
 
-.address-btn:hover, .form-select:hover{
+.address-btn:hover, .address-form-select:hover{
     outline: 1px red solid;
 }
 
