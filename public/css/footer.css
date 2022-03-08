@@ -23,7 +23,12 @@
     border: none;
 }
 
+.footer-signup-form{
+    display: flex;
+    flex-wrap: wrap;
+}
 .footer-signup-input, .footer-signup-btn{
+    margin: 0 5px;
     border-radius: 2px;
     outline: #0C713D 1px solid;
 }

@@ -40,3 +40,42 @@ html{
     color: red !important;
 }
 
+.modal-form{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form.active{
+    display: flex;
+}
+
+.modal-form-container{
+    min-width: 400px;
+    min-height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.modal-form-title{
+    font-size: 20px;
+}
+
+.modal-form-btn{
+    padding:10px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+}

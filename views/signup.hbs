@@ -1,9 +1,14 @@
 <div class="container-login-signup">
-    <form class="form-login-signup" action="">
-        <div class="form-title">Đăng nhập làm thành viên Phúc Long</div>
+    <form class="form-login-signup" method="POST" action="/save">
+        <div class="form-title">Đăng ký làm thành viên Phúc Long</div>
         <div class="form-group">
             <label class="form-label" for="email">Email</label>
             <input type="email" name="email" id="email" rules="email" class="form-input" placeholder="Nhập email">
+            <div class="message-error"></div>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="name">Họ tên</label>
+            <input type="text" name="name" id="name" rules="required" class="form-input" placeholder="Nhập họ tên">
             <div class="message-error"></div>
         </div>
         <div class="form-group">
@@ -12,8 +17,7 @@
                 placeholder="Nhập mật khẩu">
             <div class="message-error"></div>
         </div>
-        <input class="form-submit" type="submit" value="Đăng nhập">
-        <span class="signup-link">Chưa có tài khoản <a href="/signup">Đăng ký</a></span>
+        <input class="form-submit" type="submit" value="Đăng ký">
         <div class="modal-form">
             <div class="modal-form-container">
                 <div class="modal-form-title">Thông tin chưa chính xác. Vui lòng thử lại</div>
