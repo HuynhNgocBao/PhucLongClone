@@ -54,8 +54,11 @@
         flex-direction: column;
     }
 
-    .footer-signup-input, .footer-signup-btn, .footer-info{
+    .footer-signup-input, .footer-signup-btn{
         width: 100%;
+        margin: 10px;
+    }
+    .footer-info{
         margin: 10px;
     }
     .modal{
