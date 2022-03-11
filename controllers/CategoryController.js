@@ -6,8 +6,6 @@ class CategoryController{
     
     show(req,res,next){
         // Filter search
-        Category.find()
-        .then(category=>console.log(category));
         let Product_query = Product.find({category_slug: req.params.slug});
         res.locals.sort = {
             price: "default",
