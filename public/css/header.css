@@ -105,16 +105,6 @@
     transform: translateX(30%);
 }
 
-.my-cart::before, .nav-item-info::before{
-    content: "";
-    border: 10px solid;
-    border-color: transparent transparent rgb(241, 237, 237) transparent;
-    position: absolute;
-    top: -20px;
-    right: 30%;
-}
-
-
 .my-cart::after, .nav-item-info::after{
     content: "";
     border-width: 20px 80px;
@@ -166,9 +156,7 @@
     display:flex;
     justify-content: space-around;
     list-style-type: none;
-    width: 80%;
     font-size: 20px;
-    padding: 10px;
 }
 
 .nav-list li{
@@ -178,11 +166,11 @@
 .icon-down{
     position: absolute;
     right: 0;
-    top: 20px;
-    display: block;
+    top: 0;
     text-align: center;
     width: 50%;
-    height: 100%;
+    padding: 20px;
+    cursor: pointer;
 }
 .nav-item{
     color: #333;

@@ -13,6 +13,7 @@
 @media (max-width: 739px){
     .grid{
         width: 100%;
+
     }
     .hide-on-mobile{
         display: none !important;
@@ -25,6 +26,9 @@
     }
     .form-submit{
         width: 50%;
+    }
+    .itinerary-blog-item{
+        flex-direction: column-reverse;
     }
 }
 
@@ -145,7 +149,10 @@
     .filter-input{
         margin: 10px 10px;
     }
-    
+    .information-tab-list{
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 
@@ -153,5 +160,17 @@
 @media (min-width: 1024px){
     .hide-on-PC{
         display: none !important;
+    }
+    .my-cart::before, .nav-item-info::before{
+        content: "";
+        border: 10px solid;
+        border-color: transparent transparent rgb(241, 237, 237) transparent;
+        position: absolute;
+        top: -20px;
+        right: 30%;
+    }
+    .nav-list{
+        padding: 10px;
+        width: 80%;
     }
 }

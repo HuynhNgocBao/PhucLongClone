@@ -19,7 +19,7 @@ modalContainer.onclick = function(e){
 iconDowns.forEach((iconDown,index)=>{
     iconDown.onclick = (e)=>{
         var nav = iconDown.nextElementSibling;
-        if (nav.style.display === "none") nav.style.display = "flex";
-        else nav.style.display = "none";
+        if (nav.style.display === "flex") nav.style.display = "none";
+        else nav.style.display = "flex";
     }
 })

@@ -1,0 +1,35 @@
+.information-container{
+    margin-top: 136px;
+}
+
+.information-tab-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 24px;
+    margin: 0 auto 32px;
+}
+
+.information-tab-item{
+    color: rgba(0,0,0,0.5);
+    padding: 12px;
+}
+
+.information-tab-item.active{
+    border-top: 1px solid #0C713D;
+    border-bottom: 1px solid #0C713D;
+    color: #0C713D;
+}
+
+.information-tab-item:hover{
+    background-color: rgba(0,0,0,0.1);
+    color: #0C713D;
+}
+
+.information-pane-item{
+    display: none;
+}
+
+.information-pane-item.active{
+    display: inherit;
+}

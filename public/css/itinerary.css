@@ -1,54 +1,50 @@
-.trip-container{
+.itinerary-container{
     margin-top: 136px;
 }
 
-.trip-info{
+.itinerary-info{
     width: 60%;
     margin: 0 auto;
     
 }
 
-.trip-title{
+.itinerary-title{
     font-size: 32px;
     color: #0C713D;
     text-align: center;
 }
 
-.trip-description{
+.itinerary-description{
     font-size: 16px;
     margin: 40px 0;
     text-align:justify;
     line-height: 1.6;
 }
 
-.trip-blog-container{
-
-}
-
-.trip-blog-item{
+.itinerary-blog-item{
     margin-bottom: 40px;
 }
 
-.trip-blog-item-info{
+.itinerary-blog-item-info{
     flex: 1;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-.trip-blog-item-title{
+.itinerary-blog-item-title{
     font-size: 24px;
     font-weight: 600;
 }
 
-.trip-blog-item-description{
+.itinerary-blog-item-description{
     font-size: 20px;
 }
 
-.trip-blog-item-img{
+.itinerary-blog-item-img{
     flex: 1;
 }
 
-.trip-blog-item-img img{
+.itinerary-blog-item-img img{
     width: 100%;
 }
