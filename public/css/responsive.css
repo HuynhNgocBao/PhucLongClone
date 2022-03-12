@@ -47,6 +47,7 @@
     }
     .header{
         background-color: #0C713D;
+        height: 136px;
     }
     .nav-list li:hover .nav-item-info{
         display: none;

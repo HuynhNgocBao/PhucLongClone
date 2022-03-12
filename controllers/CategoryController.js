@@ -5,6 +5,31 @@ const Item = require('../models/Item');
 
 class CategoryController{
     
+    home(req,res,next){
+        // Filter search
+        let Product_query = Product.find();
+        res.locals.sort = {
+            price: "default",
+            title: "",
+        }
+        if (req.query.hasOwnProperty('price')){
+            res.locals.sort = Object.assign(res.locals.sort,req.query);
+            Product_query = Product_query.find({'title': {$regex: `.*${req.query.title}.*`}});
+            if (req.query.price !== 'default'){
+                Product_query = Product_query.sort({
+                    price: req.query.price,
+                })
+            }
+        };
+        // Render
+        Promise.all([Product_query])
+        .then(([product])=>{
+            
+            res.render('category',{
+                product: product.map(item=>item.toObject()),
+            })
+        });
+    }
     show(req,res,next){
         // Filter search
         let Product_query = Product.find({category_slug: req.params.slug});

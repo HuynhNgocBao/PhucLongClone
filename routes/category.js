@@ -6,5 +6,6 @@ router.get('/item/:slug',CategoryController.item);
 router.get('/:slug/create', CategoryController.create);
 router.post('/:slug/save', CategoryController.save);
 router.get('/:slug',CategoryController.show);
+router.get('/',CategoryController.home);
 
 module.exports = router;
