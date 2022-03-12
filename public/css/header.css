@@ -205,16 +205,12 @@
     display: block;
     width: 100%;
     height: fit-content;
+    padding: 10px;
 }
 
 .nav-link-title{
     font-weight: 600;
 }
-
-.nav-item-info-column li{
-    padding: 10px;
-}
-
 
 .nav-list li:hover .nav-item-info, .search:hover .nav-item-info{
     display: flex;

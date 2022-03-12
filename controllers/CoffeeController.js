@@ -4,6 +4,9 @@ class CoffeeController{
     };
     information(req,res,next){
         res.render('coffee/information');
+    };
+    art(req,res,next){
+        res.render('coffee/art');
     }
 }
 
