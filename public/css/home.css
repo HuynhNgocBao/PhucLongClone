@@ -14,16 +14,17 @@
 .slider-icon-back, .slider-icon-next{
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     font-size: 50px;
     color: #fff;
 }
 
 .slider-icon-back{
-    left: 50px;
+    left: 20px;
 }
 
 .slider-icon-next{
-    right: 50px;
+    right: 20px;
 }
 
 .sliderImg.active{
